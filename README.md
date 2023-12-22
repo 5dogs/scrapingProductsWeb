@@ -1,1 +1,25 @@
-firstaaa
+
+コードのREADME
+1. 目的
+このコードは、Google Colab上でGoogleスプレッドシートとGoogle Driveを連携させ、特定のウェブサイトから情報をスクレイピングして取得し、それをGoogleスプレッドシートに記録し、また画像をGoogle Driveに保存する目的で作成しました。
+
+2. 使っているライブラリ
+以下のライブラリを使用しています：
+
+requests: ウェブページからデータを取得するためのライブラリ
+gspread: Googleスプレッドシートへのアクセスを可能にするライブラリ
+BeautifulSoup: HTML解析のためのライブラリ
+oauth2client.service_account, google.oauth2.service_account, google.oauth2: Google APIへの認証のためのライブラリ
+PIL: 画像の取得・保存のためのライブラリ
+io: バイトストリームを扱うためのライブラリ
+os: ファイルおよびディレクトリの操作のためのライブラリ
+googleapiclient.http.MediaFileUpload: Google Driveへのファイルアップロードのためのライブラリ
+googleapiclient.discovery.build: Google APIへのアクセスを可能にするライブラリ
+
+4. 実行手順
+GoogleスプレッドシートとGoogle Driveにアクセスできるサービスアカウントを作成し、キーをJSONファイルとしてダウンロードします。
+ダウンロードしたJSONファイルのパスをSP_CREDENTIAL_FILEに設定します。
+GoogleスプレッドシートとGoogle Driveへのアクセス権限をSP_COPEに適切に設定します。
+画像を保存するGoogle DriveのフォルダのIDをtarget_folder_idに設定します。
+スクレイピング対象のウェブサイトのURLをurlに設定します。
+コードを実行します。
